@@ -1,5 +1,6 @@
 import './App.css';
 import Search from './Components/search/search';
+import CurrentWeather from './Components/current-weather/current-weather';
 
 function App() {
 
@@ -8,8 +9,9 @@ function App() {
   }
 
   return (
-    <div classname="container">
+    <div className="container">
       <Search onSearchChange={handleOnSearchChange}/>
+      <CurrentWeather/>
     </div>
   );
 }
