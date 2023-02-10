@@ -1,7 +1,7 @@
 .weather{
     width:300px;
     border-radius:6px;
-    box-shadow:10px -2px 20px 2px rgb(0, 0,0 /30%);
+    box-shadow:10px -2px 20px 2px rgb(0 0 0 /30%);
     color: #fff;
     background-color: #333; 
     margin: 20px auto 0 auto;
@@ -28,7 +28,7 @@
     font-size: 14px;
     line-height: 1;
     margin: 0;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 .weather-icon{
@@ -44,18 +44,19 @@
 }
 
 .details{
-    padding-left: 20px;
     width: 100%;
+    padding-left: 20px;
+   
 }
 
 .parameter-row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .parameter-label{
     text-align: left;
-    font-size :12px; ;
+    font-size :12px; 
     font-weight:400
 }
 
