@@ -8,11 +8,9 @@ const Search=({onSearchChange})=>{
 
     const loadOptions = (inputValue)=>{
         console.log('load options',inputValue)
-        // return fetch(`${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`, geoApiOptions)
-         return getCities()
-        // .then( response => {
-          //   response.json()
-        // })
+         return fetch(`${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`, geoApiOptions)
+        // return getCities()
+        .then( (response) => response.json())
         .then(response => {
             console.log(response);
             return {
